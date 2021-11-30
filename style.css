@@ -3,10 +3,13 @@
 }
 
 body {
+  touch-action: none;
   margin: 0;
   font-family: 'DM Mono', monospace;
   color: hsl(var(--hue), 100%, 90%);
   background-color: hsl(var(--hue), 100%, 15%);
+  overflow: hidden;
+  overscroll-behavior: none;
 }
 
 h1 {
