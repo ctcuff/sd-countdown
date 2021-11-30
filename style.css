@@ -1,0 +1,31 @@
+:root {
+  --hue: 0deg;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Mono', monospace;
+  color: hsl(var(--hue), 100%, 90%);
+  background-color: hsl(var(--hue), 100%, 15%);
+}
+
+h1 {
+  text-align: center;
+  font-weight: 500;
+  margin: 0.5em;
+  font-size: clamp(2em, 6vw, 4.5em);
+}
+
+small {
+  font-weight: 400;
+  margin: 0 2em;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  flex-direction: column;
+}
