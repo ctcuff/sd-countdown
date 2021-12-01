@@ -19,7 +19,7 @@ h1 {
   font-size: clamp(2em, 6vw, 4.5em);
 }
 
-small {
+.description {
   font-weight: 400;
   margin: 0 2em;
   text-align: center;
