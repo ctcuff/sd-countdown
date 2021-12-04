@@ -1,9 +1,11 @@
 const countdownText = document.querySelector('#count-down')
-const endDate = new Date('Dec, 6 2021 01:00:00').getTime()
+const endDate = new Date('Dec, 6 2021 13:00:00').getTime()
 
 const padZero = number => number.toFixed().padStart(2, '0')
 
-const updateInterval = setInterval(() => {
+const updateInterval = setInterval(updateCountDown, 1000)
+
+function updateCountDown() {
   const now = Date.now()
   const distance = endDate - now
 
@@ -23,7 +25,7 @@ const updateInterval = setInterval(() => {
     clearInterval(updateInterval)
     countdownText.innerHTML = 'TIMES UP'
   }
-}, 1000)
+}
 
 let fps = 30
 let now = 0
@@ -53,3 +55,4 @@ function update() {
 }
 
 requestAnimationFrame(update)
+updateCountDown()
